@@ -6,7 +6,7 @@ const Button = ({ text, onClick, bgColor }) => {
   };
   return (
     <button
-      className="mb-2 text-[#f2f2f2]  transition-transform hover:scale-95 p-3 shadow-md rounded-md font-medium md:font-semibold font-lb text-lg md:text-xl"
+      className="mb-2 text-[#f2f2f2]  transition-transform hover:scale-95 p-3 shadow-md rounded-md font-medium md:font-semibold font-clash text-lg md:text-xl"
       style={buttonStyle}
       onClick={onClick}
     >

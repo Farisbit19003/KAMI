@@ -13,12 +13,12 @@ const ExpenseRecords = ({ expenseRecords, onDelete }) => {
 
   return (
     <>
-      <div className="p-2 border-2 border-red-500 bg-red-300">
-        <div className="flex justify-between md:flex-row flex-col items-center">
-          <h2 className="font-bold my-2 font-lb  md:text-xl">
+      <div className="p-2 border-2 border-red-500 bg-[#c02425]">
+        <div className="flex justify-between text-white md:flex-row flex-col items-center">
+          <h2 className="font-semibold my-2 font-clash  md:text-xl">
             Expense Records:
           </h2>
-          <h2 className="font-lb">Total Expense: {totalExpense}</h2>
+          <h2 className="font-clash">Total Expense: {totalExpense}</h2>
         </div>
         {/* LISTS */}
         <div className="md:max-h-40 max-h-24 overflow-y-auto no-scrollbar ">
@@ -26,11 +26,11 @@ const ExpenseRecords = ({ expenseRecords, onDelete }) => {
             {expenseRecords.map((expense, index) => (
               <li
                 key={index}
-                className="flex items-center font-lb text-sm md:text-base bg-red-200 p-1 shadow-xl rounded-md mb-2"
+                className="flex items-center font-clash text-sm md:text-base bg-red-200 p-1 shadow-xl rounded-md mb-2"
               >
                 <span>{expense.amount}</span>
                 {expense.description && (
-                  <span className="font-bold text-red-500 ml-1">
+                  <span className="font-semibold text-[#c02425] ml-1">
                     - {expense.description}
                   </span>
                 )}

@@ -98,8 +98,8 @@ const Record = () => {
   return (
     <>
       <div className="flex justify-center items-center">
-        <div className="flex flex-col md:w-1/2 w-3/4 h-fit shadow-xl rounded-md p-3 bg-purple-300">
-          <h1 className="flex justify-center my-2 items-center md:text-2xl text-lg font-dancing font-bold">
+        <div className="flex flex-col md:w-1/2 w-3/4 h-fit shadow-inner-extra rounded-md p-3 bg-gradient-to-r from-[#c02425] to-[#f0cb35]">
+          <h1 className="flex text-white justify-center my-2 items-center md:text-2xl text-lg font-chill font-bold">
             BALANCE TRACKER
           </h1>
           {/* TOTAL BALANCE */}
@@ -119,12 +119,12 @@ const Record = () => {
           <div className="flex justify-around">
             <Button
               text={"Income"}
-              bgColor={"#3b82f6"}
+              bgColor={"#f0cb35"}
               onClick={showIncomeModal}
             />
             <Button
               text={"Expense"}
-              bgColor={"#ef4444"}
+              bgColor={"#c02425"}
               onClick={showExpenseModal}
             />
           </div>
